@@ -27,7 +27,7 @@ npm run dev
 ```
 
 ##### 参考
-https://scrapbox.io/ke456memo/%2324_pixiv%2Fthree-vrm_+_TypeScript%E3%81%AE%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%82%92%E4%BD%9C%E3%82%8B
+https://scrapbox.io/ke456memo/%2324_pixiv%2Fthree-vrm_+_TypeScript%E3%81%AE%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%82%92%E4%BD%9C%E3%82%8B<br>
 \- https://github.com/Keshigom/threeVrmTemplate/tree/master
 ##### 変更点
 webpackage v-5対応
