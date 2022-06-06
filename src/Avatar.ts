@@ -1,15 +1,25 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { VRM } from '@pixiv/three-vrm';
+import { VrmIK } from './IK';
 
 export class Avatar {
 
     private _scene: THREE.Scene;
     private _vrm: VRM;
+    private _vrmIK: VrmIK;
 
     constructor(scene: THREE.Scene) {
         this._scene = scene;
         this._vrm = null;
+    }
+
+    public get vrmIK(): VrmIK {
+        return this._vrmIK
+    }
+
+    public get vrm(): VRM {
+        return this._vrm
     }
 
     // VRMの読み込み
@@ -25,5 +35,11 @@ export class Avatar {
         const vrm = await VRM.from(gltf);
         this._scene.add(vrm.scene);
         this._vrm = vrm;
+        this._vrmIK = new VrmIK(vrm);
+    }
+
+    public update() {
+        if (!!this._vrmIK)
+            this._vrmIK.solve();
     }
 }

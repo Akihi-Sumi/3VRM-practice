@@ -31,3 +31,6 @@ https://scrapbox.io/ke456memo/%2324_pixiv%2Fthree-vrm_+_TypeScript%E3%81%AE%E3%8
 \- https://github.com/Keshigom/threeVrmTemplate/tree/master
 ##### 変更点
 webpackage v-5対応
+
+##### エラー
+「/src/IK/IKSolver.ts」70行目、setFromEulerではエラーが発生。

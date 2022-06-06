@@ -1,5 +1,6 @@
 import { Avatar } from './Avatar';
 import { Viewer } from './Viewer';
+import * as UI from './UI';
 
 window.addEventListener('DOMContentLoaded', () => {
     const viewerElement = document.getElementById('viewer');
@@ -31,6 +32,7 @@ window.addEventListener('DOMContentLoaded', () => {
     //フレーム更新
     const update = () => {
         requestAnimationFrame(update);
+        avatar.update();
         viewer.update();
     }
     update();
